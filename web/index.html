@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="learning_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="stylesheet" href="style.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>E-learning_app</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <div class="container">
+    <div class="sideNavigation">
+      <div class="topBarAction">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <div class="sideNavButton">
+        <button>
+          <i class="fa-solid fa-plus"></i>
+          <span class="collapseText" onclick="newChat()">New Chat</span>
+        </button>
+      </div>
+
+      <div class="chatHistory">
+      <h5>Recent Prompt</h5>
+      <hr>
+      <ul>
+          
+      </ul>
+    </div>
+
+    <div class="actionList">
+      <button class="transparentButton">
+        <i class="fa-regular fa-share"></i><span class="collapseText">Share</span>
+      </button>
+
+      
+
+        
+
+
+      <button class="transparentButton">
+        <i class="fa-regular fa-circle-question"></i
+        ><span class="collapseText">Help</span>
+      </button>
+    
+      <button class="transparentButton">
+        <i class="fa-solid fa-clock-rotate-left"></i
+        ><span class="collapseText">Activity</span>
+      </button>
+    
+     
+  
+      <button class="transparentButton">
+        <i class="fa-solid fa-gear"></i
+        ><span class="collapseText">Settings</span>
+      </button>
+    </div>
+    </div>
+
+   
+    <div class="chatWindow">
+      <div class="startContent">
+        
+
+        <a href="LANGUAGE APP/LYL.html"><button>Learn Your Language</button></a>
+      
+        <h1>
+          <span class="brandHello"> E-LEARNING</span><br />
+            <span class="brandQuestion">Quick prompts in various categories</span>
+        </h1>
+        <br />
+        <ul>
+       
+        </ul>
+       
+      </div>
+    
+    
+
+      <div class="chatContent">
+        <div class="results"></div>
+
+        </div>
+
+        <div class="inputArea">
+          <input type="text" placeholder="Enter a prompt here" />
+        
+  
+          <div class="iconGroup">
+            <i class="fa-solid fa-image"></i>
+            <i class="fa-solid fa-microphone"></i>
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+      
+
+        <p class="privacyPolicy">
+          Gemini may display inaccurate info, including about people, so double-check its responses.
+          Your privacy and Gemini Apps
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <!--<script src="flutter_bootstrap.js" async></script>-->
+  <script src="script.js" async></script>
+
+ 
+</body>
+</html>
+
+
+
+ <!--curl \
+  -H "Content-Type: application/json" \
+  -d "{\"contents\":[{\"parts\":[{\"text\":\"Explain how AI works\"}]}]}" \
+  -X POST "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=YOUR_API_KEY"
+
+
+  AIzaSyDeGGR-uhIkO_KBsnnLIW6SjNQdo1kFHaQ
+
+  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+  integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />-->
